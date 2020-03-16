@@ -11,5 +11,6 @@
 	<modules>
 		<module>hellospring</module>
 		<module>guestbook03</module>
+		<module>fileupload</module>
 	</modules>
 </project>

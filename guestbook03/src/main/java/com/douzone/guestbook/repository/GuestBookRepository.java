@@ -101,6 +101,14 @@ public class GuestBookRepository {
 		}
 		return result;
 	}
+	
+	public boolean delete(Long no, String password) {
+		GuestBookVo vo = new GuestBookVo();
+		vo.setNo(no);
+		vo.setPassword(password);
+		
+		return delete(vo);
+	}
 
 	public boolean delete(GuestBookVo GuestBookVo) {
 		Connection connection = null;
@@ -193,4 +201,6 @@ public class GuestBookRepository {
 		} 
 		return connection;
 	}
+
+
 }
