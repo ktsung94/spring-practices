@@ -71,7 +71,7 @@ public class XmlConfig {
 		System.out.println(user1.getName());
 	}
 
-	//	// XML Bean Configuration(Implicit Configuration)
+	//	// XML Bean Configuration(Explicit Configuration)
 	//	public static void TestApplicationContext02() {
 	//		ApplicationContext appContext = new ClassPathXmlApplicationContext("config/user/applicationContext02.xml");
 	//
@@ -79,7 +79,7 @@ public class XmlConfig {
 	//		System.out.println(user1.getName());
 	//
 	//		// Bean설정에서는 Bean의 id가 자동으로 설정되지 않는다.
-	//		// 명시적으로 설정해야한다.
+	//		// 암시적으로 설정해야한다.
 	//		// <bean id="user1" class="com.douzone.container.user.User1" />
 	//		// 만약 id를 써주지 않으면 오류가 난다.
 	//		user1 = (User1)appContext.getBean("user1");	// id = user1
@@ -102,7 +102,7 @@ public class XmlConfig {
 		System.out.println(user1.getName());
 	}
 
-	// XML Bean Configuration(Implicit Configuration)
+	// XML Bean Configuration(Explicit Configuration)
 	public static void testBeanFatory02() {
 		BeanFactory bf = new XmlBeanFactory(new ClassPathResource("config/user/applicationContext02.xml"));
 
@@ -110,7 +110,7 @@ public class XmlConfig {
 		System.out.println(user1.getName());
 
 		// Bean설정에서는 Bean의 id가 자동으로 설정되지 않는다.
-		// 명시적으로 설정해야한다.
+		// 암시적으로 설정해야한다.
 		// <bean id="user1" class="com.douzone.container.user.User1" />
 		// 만약 id를 써주지 않으면 오류가 난다.
 		user1 = (User1)bf.getBean("user1");	// id = user1
