@@ -21,19 +21,6 @@ import com.douzone.container.videosystem.DigitalVideoDisc;
 @Import({DVDConfig.class})
 public class DVDPlayerConfig {
 	
-//	@Bean
-//	public DigitalVideoDisc avengers() {
-//		return new Avengers();
-//	}
-//	
-//	@Bean(name="avengersInfinityWar")
-//	public DigitalVideoDisc blankDisc() {
-//		BlankDisc blankDisc = new BlankDisc();
-//		blankDisc.setTitle("Avengers Infinity War");
-//		blankDisc.setStudio("MARVEL");
-//		return blankDisc;
-//	}
-	
 	@Bean
 	public DVDPlayer dvdPlayer(@Qualifier("avengersInfinityWar") DigitalVideoDisc dvd) {
 		return new DVDPlayer(dvd);
