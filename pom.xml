@@ -15,5 +15,6 @@
 		<module>logex</module>
 		<module>aoptest</module>
 		<module>container</module>
+		<module>hellospring04</module>
 	</modules>
 </project>
