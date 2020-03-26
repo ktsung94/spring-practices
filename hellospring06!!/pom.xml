@@ -10,7 +10,7 @@
 	</parent>
 
 	<artifactId>hellospring06</artifactId>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
